@@ -127,6 +127,37 @@ h3 {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
+.attractive-title {
+    font-size: 3em;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.attractive-title:hover {
+    transform: scale(1.05);
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.attractive-subtitle {
+    font-size: 1.8em;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.attractive-subtitle:hover {
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+
 .project {
     margin-bottom: 30px;
     padding: 25px;
