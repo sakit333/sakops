@@ -1,0 +1,327 @@
+ /* Global Styles */
+ :root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --rightnav-colour: #393d41;
+    --text-color: #34495e;
+    --background-color: #ecf0f1;
+    --skill-bg-color: #e74c3c;
+    --highlight-color: #f1c40f;
+    --container-bg-color: #ffffff;
+    --project-bg-color: #e8f4f8;
+    --nav-bg-color: #34495e;
+    --nav-text-color: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    background-image: url('https://softjourn.com/media/images/Articles/Generative_AI_in_DevOps_Article/Cover_DevOps_AI.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.left-nav {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--nav-bg-color);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+.left-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-nav li {
+    margin-bottom: 15px;
+}
+
+.left-nav a {
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.left-nav a:hover {
+    color: var(--secondary-color);
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    transition: margin-left 0.3s ease;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 2.2em;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: var(--secondary-color);
+}
+
+.container {
+    background-color: var(--container-bg-color);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: var(--skill-bg-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: var(--project-bg-color);
+    border-radius: 12px;
+    border-left: 5px solid var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateX(10px);
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.project ul {
+    padding-left: 20px;
+}
+
+.project li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.highlight {
+    background-color: var(--highlight-color);
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid var(--secondary-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.right-nav.hidden {
+    display: none;
+}
+
+.right-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-nav li {
+    margin-bottom: 15px;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+.right-nav li img{
+    width: 100px;
+    height: 100px;
+    margin: 0.5em;
+    border-radius: 20%;
+}
+
+.tool-logo {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.tool-logo:hover {
+    transform: scale(1.2);
+}
+
+.fixed-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .left-nav {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .left-nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: var(--nav-bg-color);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .profile-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-nav {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .right-nav {
+        position: static;
+        width: 100%;
+        background-color: var(--rightnav-colour);
+    }
+
+    .fixed-footer {
+        position: relative; /* Change from fixed to relative */
+        background-color: var(--nav-bg-color);
+        color: var(--nav-text-color);
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        border-top: 1px solid #ddd;
+    }
+    .fixed-footer {
+        margin-top: auto; 
+    }
+}
