@@ -368,8 +368,8 @@ header {
 }
 
 .header-logo {
-    width: 50px; /* Set a specific width */
-    height: auto; /* Maintain aspect ratio */
+   height: 50px;
+   width: 50px;
     display: block; /* Makes the logo a block element */
     margin: 0; /* Align left */
     padding: 5px; /* Add padding around the logo */
