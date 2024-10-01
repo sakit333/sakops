@@ -167,10 +167,10 @@ h3 {
     transition: all 0.3s ease-in-out;
 }
 
-.project:hover {
+/* .project:hover {
     transform: translateX(10px);
     box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .project h3 {
     color: var(--primary-color);

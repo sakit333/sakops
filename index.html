@@ -10,7 +10,8 @@
 </head>
 <body>
     <header>
-        <img src="sak_logo.png" alt="SAK Logo" class="header-logo"  height="50px" width="50px">      
+        <img src="sak_logo.png" alt="SAK Logo" class="header-logo"  height="50px" width="50px">     
+        <h1 style="position: absolute; top: -35px; right: 0;color: rgb(255, 255, 255); z-index: 3;">SAK</h1> 
     </header>
     <div>
         <nav class="left-nav">
@@ -30,7 +31,7 @@
                 <div style="flex: 1;">
                     <h1 class="attractive-title">Akshay Kumar S</h1>
                     <h2 class="attractive-subtitle">DevOps Engineer & Corporate DevOps Trainer</h2>
-                    <p class="version">Version 1.0.1</p>
+                    <!-- <p class="version">Date <span id="timestamp"></span></p> -->
                 </div>
                 <img src="sak.jfif" alt="Akshay Kumar S" class="profile-photo">
             </div>
@@ -44,17 +45,7 @@
                     <li>Software Development Life Cycle (SDLC) methodologies and best practices</li>
                     <li>Agile project management and Scrum framework implementation</li>
                 </ul>
-                <p>As a corporate DevOps trainer, I've developed comprehensive curricula that blend theory with hands-on practice, covering:</p>
-                <ul>
-                    <li>DevOps principles and cultural transformation</li>
-                    <li>Agile methodologies and their integration with DevOps</li>
-                    <li>Microservices architecture and cloud-native development</li>
-                    <li>Security best practices in DevOps (DevSecOps)</li>
-                    <li>Advanced troubleshooting and performance optimization techniques</li>
-                    <li>SDLC phases and their alignment with DevOps practices</li>
-                    <li>Agile ceremonies, roles, and artifacts in software development</li>
-                </ul>
-                <p>My unique blend of technical expertise and training prowess enables me to not only implement cutting-edge DevOps solutions but also empower teams to embrace and excel in the DevOps culture. I'm passionate about fostering innovation, driving operational excellence, and accelerating software delivery pipelines across organizations while ensuring alignment with SDLC best practices and Agile principles.</p>
+                <p>My training programs cover DevOps principles, cloud-native development, DevSecOps, and performance optimization. I excel at implementing cutting-edge solutions and empowering teams to embrace DevOps culture, fostering innovation and operational excellence across organizations.</p>
             </div>
         
         <div id="technical-proficiencies" class="container">
@@ -131,15 +122,10 @@
                 <h3>1. Enterprise-Grade CI/CD Pipeline with Git, Jenkins, and Kubernetes</h3>
                 <img src="https://media.licdn.com/dms/image/C4D12AQEcGgR0LwV7cw/article-cover_image-shrink_600_2000/0/1595065684336?e=2147483647&v=beta&t=KxU9EvutYpYuC7KH6HF9msYno_505ZeWiGburCP2-uY" alt="IaC Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
                 <ul>
-                    <li>Architected and implemented a robust, scalable CI/CD pipeline leveraging Git for version control, Jenkins for orchestration, and Kubernetes for container orchestration, optimizing the entire software delivery lifecycle.</li>
-                    <li>Integrated advanced Git workflows, including feature branching and GitFlow, to enhance collaboration and code quality. Implemented pre-commit hooks and automated code reviews to ensure adherence to coding standards.</li>
-                    <li>Designed a multi-stage Jenkins pipeline with parallel execution, incorporating unit testing, integration testing, and security scanning (using SonarQube and Trivy) to catch issues early in the development process.</li>
-                    <li>Utilized Docker for application containerization, creating optimized multi-stage Dockerfiles to minimize image sizes and improve security. Implemented a private Docker registry using Nexus Repository for efficient image management.</li>
-                    <li>Leveraged Kubernetes for container orchestration, implementing auto-scaling, rolling updates, and self-healing capabilities. Utilized Helm charts for streamlined application deployment and management.</li>
-                    <li>Incorporated Infrastructure as Code (IaC) principles using Terraform to provision and manage cloud resources, ensuring consistency across environments and enabling easy replication of infrastructure.</li>
-                    <li>Implemented comprehensive monitoring and logging solutions using Prometheus, Grafana, and ELK stack, providing real-time insights into application and infrastructure performance.</li>
-                    <li>Achieved a 70% reduction in deployment times, 99.99% uptime for production services, and improved team productivity by 40% through automated workflows and streamlined processes.</li>
-                    <li>Implemented GitOps practices using ArgoCD for Kubernetes deployments, ensuring declarative and version-controlled application configurations.</li>
+                    <li>Architected scalable CI/CD pipeline: Git, Jenkins, Kubernetes. Integrated Git workflows, pre-commit hooks, automated reviews.</li>
+                    <li>Multi-stage Jenkins pipeline: parallel execution, testing, security scanning (SonarQube, Trivy). Docker for containerization.</li>
+                    <li>Kubernetes: auto-scaling, rolling updates, self-healing. Helm charts for deployment. IaC with Terraform.</li>
+                    <li>Monitoring: Prometheus, Grafana, ELK stack. Results: 70% faster deployments, 99.99% uptime, 40% improved productivity.</li>
                 </ul>
             </div>
         
@@ -147,13 +133,12 @@
                 <h3>2. 🏗️ Infrastructure as Code (IaC) with Terraform and Ansible</h3>
                 <img src="https://miro.medium.com/v2/resize:fit:1077/1*3ewRImzpkYHMHL-tzQunvA.png" alt="IaC Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
                 <ul>
-                    <li>Implemented Infrastructure as Code (IaC) using Terraform to provision AWS resources, enhancing reproducibility and scalability.</li>
-                    <li>Automated server configuration and application deployment with Ansible, resulting in a 30% reduction in manual setup time.</li>
-                    <li>Achieved a seamless integration of CI/CD pipelines with infrastructure provisioning, allowing for rapid deployment of new features.</li>
-                    <li>Designed modular Terraform configurations for different environments (dev, staging, production), ensuring consistency across the infrastructure lifecycle.</li>
-                    <li>Implemented state management using Terraform Cloud, enabling collaborative infrastructure development and version control of state files.</li>
-                    <li>Developed custom Ansible roles for application-specific configurations, improving code reusability and maintainability.</li>
-                    <li>Integrated HashiCorp Vault for secure management of sensitive data and API keys used in infrastructure provisioning.</li>
+                    <li>Implemented Infrastructure as Code (IaC) with Terraform for AWS resources, enhancing reproducibility and scalability.</li>
+                    <li>Automated server configuration and deployment with Ansible, reducing manual setup time by 30%.</li>
+                    <li>Integrated CI/CD pipelines with infrastructure provisioning for rapid feature deployment.</li>
+                    <li>Designed modular Terraform configurations for different environments, ensuring consistency.</li>
+                    <li>Implemented state management using Terraform Cloud for collaborative development.</li>
+                    <li>Integrated HashiCorp Vault for secure management of sensitive data in infrastructure provisioning.</li>
                 </ul>
             </div>
         
@@ -161,13 +146,11 @@
                 <h3>3. 🛡️ Container Security Scanning with Trivy and OWASP</h3>
                 <img src="https://miro.medium.com/v2/resize:fit:1400/1*qepRAVdra-_S0BpOry2ZiA.gif" alt="Container Security Workflow" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
                 <ul>
-                    <li>Integrated Trivy into the CI/CD pipeline to perform vulnerability scanning of Docker images, ensuring compliance with security standards.</li>
-                    <li>Conducted regular security audits using OWASP guidelines, identifying and remediating critical vulnerabilities within the application stack.</li>
-                    <li>Developed a report generation system to track vulnerabilities over time, enabling proactive security management.</li>
-                    <li>Implemented a custom dashboard for visualizing security scan results, providing easy-to-understand metrics for stakeholders.</li>
-                    <li>Created automated remediation workflows for common vulnerabilities, reducing the time to fix security issues by 50%.</li>
-                    <li>Integrated container signing and verification processes to ensure the integrity of deployed images.</li>
-                    <li>Implemented network policies and security contexts in Kubernetes to enhance the overall security posture of containerized applications.</li>
+                    <li>Integrated Trivy into CI/CD for Docker image vulnerability scanning, ensuring security compliance.</li>
+                    <li>Conducted OWASP-based security audits, identifying and fixing critical vulnerabilities.</li>
+                    <li>Developed vulnerability tracking system and custom dashboard for visualizing scan results.</li>
+                    <li>Implemented automated remediation workflows, reducing fix time by 50%.</li>
+                    <li>Enhanced container security with signing, verification, and Kubernetes network policies.</li>
                 </ul>
             </div>
         
@@ -175,13 +158,12 @@
                 <h3>4. 📊 Monitoring and Observability with Prometheus and Grafana</h3>
                 <img src="pro-grafana.jpg" alt="Monitoring Stack Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
                 <ul>
-                    <li>Set up Prometheus for metrics collection and Grafana for visualization, providing real-time insights into application performance and infrastructure health.</li>
-                    <li>Configured alerts and dashboards to monitor critical metrics, facilitating quick identification of performance bottlenecks and system failures.</li>
-                    <li>Implemented Node Exporter and Blackbox Exporter for comprehensive monitoring of hardware and external services, ensuring system reliability.</li>
-                    <li>Developed custom exporters for application-specific metrics, enhancing the depth of monitoring capabilities.</li>
-                    <li>Implemented PromQL for advanced querying and analysis of time-series data, enabling complex performance investigations.</li>
-                    <li>Set up Alertmanager for intelligent alert routing and deduplication, improving incident response times by 40%.</li>
-                    <li>Integrated distributed tracing using Jaeger, providing end-to-end visibility into request flows across microservices.</li>
+                    <li>Implemented Prometheus and Grafana for real-time monitoring of application and infrastructure performance.</li>
+                    <li>Configured alerts and dashboards for quick identification of performance issues and system failures.</li>
+                    <li>Set up Node Exporter and Blackbox Exporter for comprehensive hardware and external service monitoring.</li>
+                    <li>Developed custom exporters and implemented PromQL for advanced metric analysis.</li>
+                    <li>Integrated Alertmanager for efficient alert handling, reducing incident response times by 40%.</li>
+                    <li>Implemented Jaeger for distributed tracing across microservices.</li>
                 </ul>
             </div>
         
@@ -189,13 +171,11 @@
                 <h3>5. 🧰 Code Quality and Artifact Management with SonarQube and Nexus</h3>
                 <img src="https://miro.medium.com/v2/resize:fit:919/1*ObQVykj3vnJmHvICeoSdeg.png" alt="Code Quality and Artifact Management Workflow" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
                 <ul>
-                    <li>Integrated SonarQube into the CI pipeline for continuous code quality inspection, leading to improved code maintainability and reduced technical debt.</li>
-                    <li>Utilized Nexus for managing build artifacts, streamlining the release process and ensuring consistent deployment of application versions.</li>
-                    <li>Implemented versioning strategies for artifacts to enhance traceability and rollback capabilities during deployments.</li>
-                    <li>Developed custom SonarQube quality gates and metrics tailored to project-specific requirements.</li>
-                    <li>Implemented automated code review processes using SonarQube's pull request decoration feature, reducing manual review time by 30%.</li>
-                    <li>Set up Nexus as a private Docker registry, improving security and control over container image distribution.</li>
-                    <li>Implemented retention policies in Nexus to manage storage efficiently and maintain only relevant artifacts.</li>
+                    <li>Integrated SonarQube for continuous code quality inspection, improving maintainability and reducing technical debt.</li>
+                    <li>Used Nexus for artifact management, streamlining releases and ensuring consistent deployments.</li>
+                    <li>Implemented versioning strategies for enhanced traceability and rollback capabilities.</li>
+                    <li>Developed custom SonarQube quality gates and metrics for project-specific needs.</li>
+                    <li>Set up Nexus as a private Docker registry, improving container image security and distribution.</li>
                 </ul>
             </div>
         </div>
@@ -203,25 +183,24 @@
         <div id="achievements" class="container">
             <h2>🏆 Groundbreaking Achievements & Innovations</h2>
             <ul>
-                <li>Architected and delivered a <span class="highlight">revolutionary DevOps mastery program</span>, transforming over 200 IT professionals into DevOps virtuosos and igniting a passion for continuous evolution in tech practices.</li>
-                <li>Crafted an <span class="highlight">immersive, cutting-edge curriculum</span> centered on GitOps methodologies, slashing deployment errors by an astounding 85% and setting new industry benchmarks.</li>
-                <li>Pioneered the integration of <span class="highlight">advanced chaos engineering techniques</span> into the training regimen, resulting in bulletproof system resilience and a remarkable 80% reduction in unexpected downtimes.</li>
-                <li>Curated a <span class="highlight">state-of-the-art knowledge repository</span> and designed <span class="highlight">captivating, hands-on workshops</span>, accelerating the DevOps learning curve and reducing time-to-expertise by an impressive 60% for aspiring practitioners.</li>
-                <li>Spearheaded the development of a <span class="highlight">gamified learning platform</span>, boosting engagement rates by 95% and making DevOps education an exhilarating journey for participants.</li>
-                <li>Orchestrated <span class="highlight">industry-academia partnerships</span>, bridging the gap between theoretical knowledge and practical skills, resulting in a 70% increase in job placement rates for program graduates.</li>
-                <li>Launched a <span class="highlight">mentorship initiative</span> connecting DevOps veterans with newcomers, fostering a thriving community and accelerating career growth for over 500 professionals.</li>
+                <li>Architected DevOps mastery program, transforming 200+ IT pros into experts.</li>
+                <li>Created GitOps curriculum, reducing deployment errors by 85%.</li>
+                <li>Integrated chaos engineering, improving resilience and reducing downtimes by 80%.</li>
+                <li>Developed knowledge repo and workshops, accelerating DevOps learning by 60%.</li>
+                <li>Created gamified learning platform, boosting engagement by 95%.</li>
+                <li>Established industry-academia partnerships, improving graduate job placement by 70%.</li>
+                <li>Launched mentorship program, connecting veterans with newcomers.</li>
             </ul>
         </div>
         
         <div id="professional-network" class="container">
             <h2>🌐 Professional Network</h2>
             <ul>
-                <li><a href="https://www.linkedin.com/in/akshay-kumar-s-11ba69278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/sakit333" target="_blank">GitHub</a></li>
-                <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/akshay-kumar-s-11ba69278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="LinkedIn" style="width: 20px; height: 20px; vertical-align: middle;"> LinkedIn</a></li>
+                <li><a href="https://github.com/sakit333" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt="GitHub" style="width: 20px; height: 20px; vertical-align: middle;"> GitHub</a></li>
+                <li><a href="https://twitter.com/yourusername" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1245px-Logo_of_Twitter.svg.png" alt="Twitter" style="width: 20px; height: 20px; vertical-align: middle;"> Twitter</a></li>
             </ul>
-        </div>
-       
+        </div>     
     </div>
     <footer class="fixed-footer">
         <p>&copy; 2024 Akshay Kumar S. All rights reserved.</p>
