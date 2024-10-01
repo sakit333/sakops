@@ -1,9 +1,9 @@
-const rightNav = document.querySelector(".right-nav");
-const clickElement = document.querySelector(".left-nav ul li:last-child");
+// const rightNav = document.querySelector(".right-nav");
+// const clickElement = document.querySelector(".left-nav ul li:last-child");
 
-clickElement.addEventListener("click", () => {
-    rightNav.classList.toggle("hidden");
-});
+// clickElement.addEventListener("click", () => {
+//     rightNav.classList.toggle("hidden");
+// });
 
 // $(document).ready(function() {
 //     $('.nav-link').click(function(event) {

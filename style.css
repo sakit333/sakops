@@ -36,7 +36,7 @@ body {
     padding: 20px;
     position: fixed;
     left: 0;
-    top: 0;
+    top: 40px;
     overflow-y: auto;
     transition: width 0.3s ease;
 }
@@ -96,7 +96,7 @@ h3 {
     background-color: var(--container-bg-color);
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 40px;
+    padding: 20px;
     margin-bottom: 40px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -355,4 +355,55 @@ a:hover {
     .fixed-footer {
         margin-top: auto; 
     }
+}
+header {
+    position: fixed; /* Fixes the header to the top of the viewport */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Aligns it to the left */
+    width: 100%; /* Makes the header span the full width */
+    background-color: var(--nav-bg-color);
+    z-index: 1000; /* Ensures it stays above other content */
+    padding: 1px 0; /* Optional padding for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for a subtle effect */
+}
+
+.header-logo {
+    width: 50px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Makes the logo a block element */
+    margin: 0; /* Align left */
+    padding: 5px; /* Add padding around the logo */
+    background-color: var(--nav-bg-color);
+}
+
+.header-logo img {
+    max-width: 10%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Add some padding to the body to prevent content from hiding behind the fixed header */
+body {
+    padding-top: 60px; /* Adjust based on the header height */
+}
+
+.container_logo {
+    /* background-color: var(--container-bg-color); */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.service-image, .benefit-image {
+    width: 50px; /* Set width for images */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+    vertical-align: middle; /* Aligns the image with the text */
 }
