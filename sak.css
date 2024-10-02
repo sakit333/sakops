@@ -1,0 +1,42 @@
+.sak_content {
+    position: absolute;
+    top: -35px;
+    right: 60px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    font-family: Arial, sans-serif;
+}
+.sak_home {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    font-family: Arial, sans-serif;
+}
+.sak_time {
+    position: absolute;
+    top: 7px;
+    right: 130px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sak_home_back {
+    position: absolute;
+    top: -35px;
+    right: 60px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    font-family: Arial, sans-serif;
+}
+.sak_home_back_icon {
+    position: absolute;
+    top: -35px;
+    right: 60px;
+    color: rgb(255, 255, 255);
+    z-index: 3;
+    font-family: Arial, sans-serif;
+}

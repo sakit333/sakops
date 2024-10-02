@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contents</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sak.css">
     <script src="script.js"></script>
     <link rel="icon" href="sak_logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
@@ -12,7 +13,9 @@
 <body>
     <header>
         <img src="sak_logo.png" alt="SAK Logo" class="header-logo" height="50px" width="50px">
-        <h1 style="position: absolute; top: -35px; right: 0;color: rgb(255, 255, 255); z-index: 3;">SAK</h1>       
+        <!-- <h1 style="position: absolute; top: -35px; right: 0;color: rgb(255, 255, 255); z-index: 3;">SAK</h1>     -->
+        <h1 class="sak_home"><a href="index.html" style="color: inherit; text-decoration: none;" title="Home">🏠</a></h1>
+        <h1 class="sak_home_back_icon"><a href="index.html" style="color: inherit; text-decoration: none;" title="Back">⬅️</a></h1>
     </header>
     <main>
         <div class="container_logo">
@@ -74,7 +77,22 @@
                             <li>Deployment: deployment done into Tomcat Docker container</li>
                         </ul>
                 </div>
-            <div class="project">
+                <div class="project">
+                    <h2>Project 2: Web Application Deployment to Apache Tomcat with Docker, DockerHub, and Ansible</h2>
+                    <p class="pro"><strong>Project demonstrates a complete Deployment:  
+                        <a href="docker_hub_ansible.jpg" alt="CI/CD Pipeline" class="service-image">Project-2</a></strong>
+                    </p>
+                        <ul>
+                            <li>Cloud Infrastructure: AWS for hosting the entire infrastructure</li>
+                            <li>Operating System: Linux for running the servers and containers</li>
+                            <li>Version Control: Git & GitHub for source code management and collaboration</li>
+                            <li>Containerization: Docker for creating and managing application containers</li>
+                            <li>Container Registry: DockerHub for storing and distributing Docker images</li>
+                            <li>Application Server: Apache Tomcat for hosting the Java web application</li>
+                            <li>Configuration Management: Ansible for infrastructure provisioning and application deployment</li>
+                        </ul>
+                </div>
+            <div class="project"> </div>
         </div>
 
         <div id="aws" class="container">
