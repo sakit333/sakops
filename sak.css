@@ -58,3 +58,47 @@
     z-index: 3;
     font-family: Arial, sans-serif;
 }
+
+/* Styling the navigation list */
+.nav-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Display list items in a row */
+    gap: 15px; /* Space between items */
+}
+
+/* Styling each list item */
+.nav-list li {
+    display: inline-block; /* Display items inline */
+}
+
+/* Styling the buttons */
+.nav-button {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    display: flex; /* Align icon and text horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icon and text */
+}
+
+/* Hover effect for buttons */
+.nav-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Styling for the icon */
+.nav-icon {
+    font-size: 18px; /* Icon size */
+}
+
+/* Styling for the text */
+.nav-text {
+    font-weight: bold; /* Bold text */
+}
