@@ -276,9 +276,25 @@ a:hover {
 }
 
 .tool-logo {
-    width: 100px;
-    height: 100px;
+    width: 62px;
+    height: 62px;
     transition: transform 0.3s ease;
+    max-width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .tool-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tool-logo {
+        width: 40px;
+        height: 40px;
+    }
 }
 
 .tool-logo:hover {
