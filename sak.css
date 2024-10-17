@@ -52,9 +52,9 @@
 
 .sak_devops {
     position: absolute;
-    top: -35px;
-    right: 120px;
-    color: rgb(255, 255, 255);
+    top: -36px;
+    right: 150px;
+    color: #34495e;
     z-index: 3;
     font-family: Arial, sans-serif;
 }
