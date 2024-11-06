@@ -5,41 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akshay Kumar S - DevOps Engineer & Corporate DevOps Trainer</title>
     <link rel="icon" href="images/sak_logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sak.css">
 </head>
 <body>
     <header>
-        <img src="images/sak_logo.png" alt="SAK Logo" class="header-logo"  height="50px" width="50px">     
-        <h1 class="sak_home"><a href="index.html" style="color: inherit; text-decoration: none;" title="Home">🏠</a></h1>
-        <h1 class="sak_content"><a href="content.html" style="color: inherit; text-decoration: none;" title="Contents">📄</a></h1>
-        <h1 class="sak_time"><span id="timestamp"></span></header></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/sak_logo.png" alt="SAK Logo" height="50" width="50">
+                </a>
+                
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="notes_info.html" onclick="checkLogin(event)"><i class="fa-solid fa-skull-crossbones"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="content.html"><i class="fa-regular fa-file">  Projects</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="index.html"><i class="fa-solid fa-house"> Home</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <div class="main-content">
+        <div class="container">
+            <img src="images/sak_linkedin.jpeg" class="img-fluid" style="max-width: align-self;" alt="sakit333">
+        </div>
         <div id="about" class="container">
             <div style="display: flex; align-items: center;">
                 <div style="flex: 1;">
                     <h1 class="attractive-title">Akshay Kumar S</h1>
-                    <h2 class="attractive-subtitle">Associate Software Engineer & Corporate DevOps Trainer <small>(Freelancer)</small></h2>              
+                    <h2 class="attractive-subtitle">DevOps & DevSecOps Specialist | Java & Python Expert | Cloud Infrastructure & Security Expert | Corporate Trainer <small>(Freelancer)</small></h2>              
                 </div>
                 <img src="images/sak.jfif" alt="Akshay Kumar S" class="profile-photo">
             </div>
-                <p>With over 2+ years of hands-on experience, I am a passionate DevOps engineer and trainer dedicated to revolutionizing software development and deployment processes. My expertise spans:</p>
-                <ul>
-                    <li>Architecting robust and scalable cloud infrastructures using AWS and Azure</li>
-                    <li>Implementing CI/CD pipelines with Jenkins, GitLab CI, and GitHub Actions</li>
-                    <li>Containerization and orchestration using Docker and Kubernetes</li>
-                    <li>Infrastructure as Code (IaC) with Terraform and Ansible</li>
-                    <li>Monitoring and logging solutions using Prometheus and Grafana</li>
-                    <li>Software Development Life Cycle (SDLC) methodologies and best practices</li>
-                    <li>Agile project management and Scrum framework implementation</li>
-                </ul>
-                <p>My training programs cover DevOps principles, cloud-native development, DevSecOps, and performance optimization. I excel at implementing cutting-edge solutions and empowering teams to embrace DevOps culture, fostering innovation and operational excellence across organizations.</p>
-            </div>
+            <p>With over 2+ years of experience in development, DevOps, and corporate training, I am committed to driving innovation through strategic automation, security-first approaches, and operational excellence. My expertise covers:</p>
+            <ul>
+                <li>Backend development with Python (Flask) and Java (Spring) for scalable, high-performance applications</li>
+                <li>Advanced CI/CD automation using Jenkins, GitLab CI, and GitHub Actions</li>
+                <li>Scalable containerization and orchestration with Docker and Kubernetes</li>
+                <li>Infrastructure as Code (IaC) using Terraform and Ansible for streamlined deployment</li>
+                <li>Comprehensive monitoring and logging with Prometheus and Grafana</li>
+                <li>Security integration across the development lifecycle using DevSecOps tools like SonarQube and Trivy</li>
+                <li>Experience in multi-environment setups (Windows, Mac, Linux - RHEL, Ubuntu)</li>
+                <li>Agile methodologies and project management through the Scrum framework</li>
+            </ul>
+            <p>As a corporate trainer, I empower teams to embrace DevOps and DevSecOps principles, cloud-native development, and performance optimization. My mission is to enhance software delivery through automated, secure, and collaborative workflows. Let’s connect and explore how my expertise can drive secure, faster, and efficient software delivery in your organization.</p>
+        </div>
         
-            <div id="technical-proficiencies" class="container">
-                <h2>🛠️ Technical Skills</h2>
+        <div id="technical-proficiencies" class="container">
+            <h2>🛠️ Technical Skills</h2>
             
                 <ul><strong>Languages: </strong>
                     <span>Java</span>,
@@ -129,13 +160,12 @@
                     <span>Sprint Review</span>,
                     <span>Sprint Retrospective</span>
                 </ul>
-                
+
                 <ul><strong>Other: </strong>
                     <span>Argo CD</span>,
                     <span>Helm</span>
                 </ul>
-                
-            </div>
+        </div>
             
         
         <div id="signature-projects" class="container">

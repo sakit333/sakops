@@ -5,71 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contents</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="sak.css">
     <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="icon" href="images/sak_logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/sak_logo.png" alt="SAK Logo" class="header-logo" height="50px" width="50px">
-        <h1 class="sak_home"><a href="index.html" style="color: inherit; text-decoration: none;" title="Home">🏠</a></h1>
-        <h1 class="sak_home_back_icon"><a href="javascript:history.back()" style="color: inherit; text-decoration: none;" title="Back">⬅️</a></h1>
-        <h1 class="sak_devops"><a href="notes_info.html" style="color: inherit; text-decoration: none;" title="Info">-</a></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="images/sak_logo.png" alt="SAK Logo" height="50" width="50">
+                </a>
+                
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="notes_info.html" onclick="checkLogin(event)"><i class="fa-solid fa-skull-crossbones"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="javascript:history.back()"><i class="fa-solid fa-angles-left"> Back</i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white fs-4" href="index.html"><i class="fa-solid fa-house"> Home</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-        <div class="container_logo">
-            <p>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSObhWW7gEGNs1r3kbEXIeWuIDC74C6p5RVQ&s" alt="AWS" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/linux-icon-1719x2048-gi8asnz4.png" alt="Linux" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/java-icon-1511x2048-6ikx8301.png" alt="Java" class="tool-logo">
-                <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" alt="Python" class="tool-logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7czytzEf61EjRAONWZxAxEtX1x_EzMrmbUcwKH_p3nsfs8VfuiUvb2sxlouAvclFl4LQ&usqp=CAU" alt="Flask" class="tool-logo">
-                <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/docker_original_logo_icon_146556.png" alt="Docker" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/kubernetes-icon-2048x1995-r1q3f8n7.png" alt="Kubernetes" class="tool-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Jenkins_logo.svg/1200px-Jenkins_logo.svg.png" alt="Jenkins" class="tool-logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8iiGIMaw9J6UVatENir9XF4tybDnbWiAVQ&s" alt="Prometheus" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/ansible-icon-2048x2048-ba8ueimn.png" alt="Ansible" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/terraform-icon-1803x2048-hodrzd3t.png" alt="Terraform" class="tool-logo">
-                <img src="https://previews.123rf.com/images/jovanas/jovanas1612/jovanas161200791/68255878-sql-icon.jpg" alt="sql" class="tool-logo">
-                <img src="https://static.vecteezy.com/system/resources/previews/015/824/700/original/sh-file-format-icon-free-vector.jpg" alt="Shell Scripting" class="tool-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png" alt="Azure" class="tool-logo">
-                <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" class="tool-logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwod0EgYh6ixNJuzJAZt413WNM0SX8RrUJsg&s" alt="GitLab" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/prometheus-icon-511x512-1vmxbcxr.png" alt="Prometheus" class="tool-logo">
-                <img src="https://media.licdn.com/dms/image/D4D12AQHzE1oIZYll5w/article-cover_image-shrink_720_1280/0/1674467662411?e=2147483647&v=beta&t=GS0gLQDx5zjLsfWlJUHbC08_mxhfyom4VJJVTROFoKY" alt="SonarQube" class="tool-logo">
-                <img src="https://e7.pngegg.com/pngimages/630/547/png-clipart-kafka-vertical-logo-tech-companies-thumbnail.png" alt="Kafka" class="tool-logo">
-                <img src="https://static-00.iconduck.com/assets.00/file-type-nginx-icon-1793x2048-yt5u3fm7.png" alt="Nginx" class="tool-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Apache_Tomcat_logo.svg/2560px-Apache_Tomcat_logo.svg.png" alt="Tomcat" class="tool-logo">
-                <img src="https://cdn.prod.website-files.com/5f10ed4c0ebf7221fb5661a5/5f2af61146c55b6e172fa5b3_NexusRepo_Icon.png" alt="Nexus" class="tool-logo">
-                <img src="https://static.vecteezy.com/system/resources/previews/013/313/458/non_2x/html-icon-3d-rendering-illustration-vector.jpg" alt="HTML" class="tool-logo">
-                <img src="https://img.freepik.com/premium-vector/modern-flat-design-json-file-icon-web-simple-style_599062-468.jpg" alt="JSON" class="tool-logo">
-                <img src="https://miro.medium.com/v2/resize:fit:266/1*4kAaqUfUWKZVP1qtspKJjg.png" alt="Trivy" class="tool-logo">
-                <img src="https://cdn.worldvectorlogo.com/logos/fastapi.svg" alt="FastAPI" class="tool-logo">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrPmNWAtnroI424NFmJBwNtUs6YIL_eVXHjA&s" alt="MySQL" class="tool-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png" alt="git" class="tool-logo">
-            </p>
-        </div>
         <div class="container">
             <div class="content">
                 <h1>DevOps Practices</h1>
                 <p>Implementing DevOps principles to streamline development and operations.</p>
                 <ul class="nav-list">
-                    <li><button class="nav-button" onclick="location.href='#projects'">
-                        <span class="nav-icon">🚀</span>
-                        <span class="nav-text">DevOps Projects</span>
-                    </button></li>
-                    <li><button class="nav-button" onclick="location.href='#aws'">
-                        <span class="nav-icon">☁️</span>
-                        <span class="nav-text">AWS Services</span>
-                    </button></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 1.3rem;">AWS_services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#aws_vpc">aws_vpc</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 1.3rem;">DevOps Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#project_1">Project-1</a></li>
+                            <li><a class="dropdown-item" href="#project_2">Project-2</a></li>
+                            <li><a class="dropdown-item" href="#project_3">Project-3</a></li>
+                            <li><a class="dropdown-item" href="#project_4">Project-4</a></li>
+                            <li><a class="dropdown-item" href="#project_5">Project-5</a></li>
+                            <li><a class="dropdown-item" href="#project_6">Project-6</a></li>
+                            <li><a class="dropdown-item" href="#project_7">Project-7</a></li>
+                            <li><a class="dropdown-item" href="#project_8">Project-8</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </li>
                 </ul>
             </div>       
         </div>
-        <div id="projects" class="container">
+        <div id="projects" class="container mt-6">
             <h1>Projects</h1>
             <p>Explore my projects showcasing DevOps practices and automation.</p>
-                <div class="project">
+                <div id="project_1" class="project">
                     <h2>Project 1: Automated Web App Deployment Using Jenkins Freestyle Project with GitHub, Maven, Tomcat, and AWS EC2</h2>
                     <p class="pro"><strong>Deployment of Web Application Using GitHub, Maven, Jenkins Freestyle Project, Tomcat, and AWS EC2
                     <a href="images/Project_tomcat_1.jpg" alt="Project-1" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-1</a></strong>
@@ -82,7 +92,7 @@
                         <li><strong>Deployment:</strong> Apache Tomcat server hosted on an AWS EC2 instance</li>
                     </ul>
                 </div>
-                <div class="project">
+                <div id="project_2" class="project">
                     <h2>Project 2: Automated Web App Deployment Using Jenkins Freestyle Project with GitHub, Maven, Ansible, Tomcat, and AWS EC2</h2>
                     <p class="pro"><strong>Deployment of Web Application Using GitHub, Maven, Jenkins Freestyle Project, Ansible, Tomcat, and AWS EC2
                     <a href="images/Project_2.jpg" alt="Project-1" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-2</a></strong>
@@ -98,7 +108,7 @@
                     </ul>
                 </div>
                 
-                <div class="project">
+                <div id="project_3" class="project">
                     <h2>Project 3: Deployment of webapp using GitHub, Maven, Jenkins, Ansible, and Docker</h2>
                     <p class="pro"><strong>Project demonstrates a complete Deployment:  
                         <a href="images/project_1.jpg" alt="VPC" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-3</a></strong>
@@ -114,7 +124,7 @@
                             <li>Deployment: deployment done into Tomcat Docker container</li>
                         </ul>
                 </div>
-                <div class="project">
+                <div id="project_4" class="project">
                     <h2>Project 4: Web Application Deployment to Apache Tomcat with Docker, DockerHub, and Ansible</h2>
                     <p class="pro"><strong>Project demonstrates a complete Deployment:  
                         <a href="images/docker_hub_ansible.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-4</a></strong>
@@ -130,7 +140,7 @@
                             <li>Configuration Management: Ansible for infrastructure provisioning and application deployment</li>
                         </ul>
                 </div>
-                <div class="project">
+                <div id="project_5" class="project">
                     <h2>Project 5: Multi-Server Web Application Deployment with Docker, DockerHub, and Ansible</h2>
                     <p class="pro"><strong>Project demonstrates a complete Multi-Server Deployment:  
                         <a href="images/ansible_docker_server.jpg" alt="Multi-Server CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-5</a></strong>
@@ -144,7 +154,7 @@
                             <li>Configuration Management: Ansible for multi-server provisioning and deployment</li>
                         </ul>
                 </div>
-                <div class="project">
+                <div id="project_6" class="project">
                     <h2>Project 6: Continuous Integration and Deployment with GitHub, Maven, Jenkins, Spring, AWS EC2, and RDS</h2>
                     <p class="pro"><strong>Project demonstrates a complete CI/CD pipeline for a Spring application with AWS RDS database:  
                         <a href="images/spring_mysql.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-6</a></strong>
@@ -161,7 +171,7 @@
                         </ul>
                 </div>
 
-                <div class="project">
+                <div id="project_7" class="project">
                     <h2>Project 7: CI/CD for Spring Boot: Deploying with GitHub, Maven, Jenkins, Docker, Mysql and EC2</h2>
                     <p class="pro"><strong>Project demonstrates a complete CI/CD pipeline for a Spring Boot application with MySQL database and Docker container:  
                         <a href="images/spring_mysql_docker.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-7</a></strong>
@@ -178,7 +188,7 @@
                             <li>Deployment: Automated deployment of Docker containers to AWS EC2 instances</li>
                         </ul>
                 </div>
-                <div class="project">
+                <div id="project_8" class="project">
                     <h2>Project 8: Kubernetes-Based Deployment of a Spring Boot Application with External MySQL Integration</h2>
                     <p class="pro"><strong>Project demonstrates a Kubernetes-based deployment of a Spring Boot application with external MySQL database integration:  
                         <a href="images/spring_mysql_kube.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-8</a></strong>
@@ -202,7 +212,7 @@
         <div id="aws" class="container">
             <h1>AWS (Amazon Web Services)</h1>
             <p>AWS is a comprehensive cloud computing platform offering a wide range of services including computing power, storage options, networking, and databases. It provides scalable and flexible solutions for businesses of all sizes.</p>
-            <div class="project">
+            <div id="aws_vpc" class="project">
             <h2>Key Services:</h2>
             <ul>
                 <li>
