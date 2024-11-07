@@ -53,7 +53,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 1.3rem;">AWS_services</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#aws_vpc">aws_vpc</a></li>
+                            <li><a class="dropdown-item" href="#aws_ec2_s3">aws_ec2_s3</a></li>
+                            <li><a class="dropdown-item" href="#aws_vpc">aws_vpc</a></li>     
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Separated link</a></li>
                         </ul>
@@ -69,7 +70,16 @@
                             <li><a class="dropdown-item" href="#project_6">Project-6</a></li>
                             <li><a class="dropdown-item" href="#project_7">Project-7</a></li>
                             <li><a class="dropdown-item" href="#project_8">Project-8</a></li>
-                            <li><a class="dropdown-item" href="#project_9">Project-9</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Separated link</a></li>
+                          </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 1.3rem;">Special Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#spc_project_1">Project-1</a></li>
+                            <li><a class="dropdown-item" href="#spc_project_2">Project-2</a></li>
+                            <li><a class="dropdown-item" href="#spc_project_3">Project-3</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="#">Separated link</a></li>
                           </ul>
@@ -207,65 +217,93 @@
                             <li>Deployment: Automated deployment of Docker containers to Kubernetes pods</li>
                         </ul>
                 </div>
-                <div id="project_9" class="project">
-                    <h2>Project 9: Automated Java Web App Deployment to Tomcat with CI/CD Using GitHub, Jenkins, Nexus, EC2, and Maven</h2>
-                    <p class="pro"><strong>This project demonstrates a CI/CD pipeline for deploying a Java web application to a Tomcat server on AWS EC2 using GitHub, Jenkins, Nexus, and Maven:  
-                        <a href="images/nexus_jenkins_tomcat.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-9</a></strong>
-                    </p>
-                    <img src="images/nexus_jenkins_tomcat.jpg" alt="CI/CD Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
-                    <ul>
-                        <li>Version Control: GitHub for managing the source code and enabling collaboration</li>
-                        <li>Build Tool: Maven for dependency management and building the Java application</li>
-                        <li>Artifact Repository: Nexus for storing and managing build artifacts</li>
-                        <li>CI/CD: Jenkins for automating the build, testing, and deployment stages</li>
-                        <li>Application Server: Apache Tomcat for deploying and running the Java web application</li>
-                        <li>Cloud Infrastructure: AWS EC2 instance configured for Tomcat hosting</li>
-                        <li>Deployment: Automated deployment of the Java application to the Tomcat server on EC2</li>
-                    </ul>
-                </div>
-                <div id="project_10" class="project">
-                    <h2>Project 10: Automated Deployment of Spring Application with CI/CD Using GitHub, Jenkins, SonarQube, EC2, and Maven with MySQL Database</h2>
-                    <p class="pro"><strong>This project demonstrates a CI/CD pipeline for deploying a Spring application on AWS EC2 using GitHub for version control, Jenkins for automation, SonarQube for code quality, Maven for build management, and MySQL for database integration:  
-                        <a href="images/sonarQube_jen_java.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-10</a></strong>
-                    </p>
-                    <img src="images/sonarQube_jen_java.jpg" alt="CI/CD Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
-                    <ul>
-                        <li>Version Control: GitHub for source code management and collaboration</li>
-                        <li>Build Tool: Maven for dependency management and building the Spring application</li>
-                        <li>Code Quality: SonarQube for static code analysis and ensuring code quality standards</li>
-                        <li>CI/CD: Jenkins for automating the build, testing, code quality checks, and deployment processes</li>
-                        <li>Cloud Infrastructure: AWS EC2 instance for hosting the Spring application</li>
-                        <li>Database: MySQL database for storing and managing application data</li>
-                        <li>Deployment: Automated deployment of the Spring application to an EC2 instance</li>
-                    </ul>
-                </div>
-                
-            <div class="project"> </div>
+                <div class="project"> </div>
+        </div>
+        <div id="projects" class="container mt-6">
+            <h1>Special Projects</h1>
+            <p>DevOps Meets DevSecOps: Automating Security for Continuous Delivery</p>
+            <div id="spc_project_1" class="project">
+                <h2>Spc Project 1: Automated Java Web App Deployment to Tomcat with CI/CD Using GitHub, Jenkins, Nexus, EC2, and Maven</h2>
+                <p class="pro"><strong>This project demonstrates a CI/CD pipeline for deploying a Java web application to a Tomcat server on AWS EC2 using GitHub, Jenkins, Nexus, and Maven:  
+                    <a href="images/nexus_jenkins_tomcat.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Spc Project-1</a></strong>
+                </p>
+                <img src="images/nexus_jenkins_tomcat.jpg" alt="CI/CD Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
+                <ul>
+                    <li>Version Control: GitHub for managing the source code and enabling collaboration</li>
+                    <li>Build Tool: Maven for dependency management and building the Java application</li>
+                    <li>Artifact Repository: Nexus for storing and managing build artifacts</li>
+                    <li>CI/CD: Jenkins for automating the build, testing, and deployment stages</li>
+                    <li>Application Server: Apache Tomcat for deploying and running the Java web application</li>
+                    <li>Cloud Infrastructure: AWS EC2 instance configured for Tomcat hosting</li>
+                    <li>Deployment: Automated deployment of the Java application to the Tomcat server on EC2</li>
+                </ul>
+            </div>
+            <div id="spc_project_2" class="project">
+                <h2>Spc Project 2: Automated Deployment of Spring Application with CI/CD Using GitHub, Jenkins, SonarQube, EC2, and Maven with MySQL Database</h2>
+                <p class="pro"><strong>This project demonstrates a CI/CD pipeline for deploying a Spring application on AWS EC2 using GitHub for version control, Jenkins for automation, SonarQube for code quality, Maven for build management, and MySQL for database integration:  
+                    <a href="images/sonarQube_jen_java.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Spc Project-2</a></strong>
+                </p>
+                <img src="images/sonarQube_jen_java.jpg" alt="CI/CD Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
+                <ul>
+                    <li>Version Control: GitHub for source code management and collaboration</li>
+                    <li>Build Tool: Maven for dependency management and building the Spring application</li>
+                    <li>Code Quality: SonarQube for static code analysis and ensuring code quality standards</li>
+                    <li>CI/CD: Jenkins for automating the build, testing, code quality checks, and deployment processes</li>
+                    <li>Cloud Infrastructure: AWS EC2 instance for hosting the Spring application</li>
+                    <li>Database: MySQL database for storing and managing application data</li>
+                    <li>Deployment: Automated deployment of the Spring application to an EC2 instance</li>
+                </ul>
+            </div>
+            <div id="spc_project_3" class="project">
+                <h2>Spc Project 3: Automated Deployment of Spring Application with CI/CD Using GitHub, Jenkins, SonarQube, Nexus, EC2, Maven, and MySQL Database</h2>
+                <p class="pro"><strong>This project demonstrates a fully automated CI/CD pipeline for deploying a Spring Boot application to AWS EC2 using GitHub for version control, Jenkins for automation, SonarQube for code quality checks, Nexus Repository Manager for artifact management, Maven for build management, and MySQL for database integration.  
+                    <a href="images/sonarQube_nexus_jar.jpg" alt="CI/CD Pipeline" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Spc Project-3</a></strong>
+                </p>
+                <img src="images/sonarQube_nexus_jar.jpg" alt="CI/CD Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
+                <ul>
+                    <li><strong>Version Control:</strong> GitHub for source code management and collaboration, ensuring easy tracking of code changes and efficient collaboration between developers.</li>
+                    <li><strong>Build Tool:</strong> Maven for dependency management and building the Spring Boot application, ensuring that all dependencies are resolved and the build is consistent across environments.</li>
+                    <li><strong>Code Quality:</strong> SonarQube for static code analysis to ensure code quality standards are maintained, flagging bugs, vulnerabilities, and code smells early in the development cycle.</li>
+                    <li><strong>CI/CD:</strong> Jenkins for automating the build, testing, code quality checks, and deployment processes. Jenkins automates the entire pipeline, ensuring faster and more reliable releases.</li>
+                    <li><strong>Artifact Management:</strong> Nexus Repository Manager to store and manage build artifacts (like JAR files), ensuring that only tested and validated versions of the application are used for deployment.</li>
+                    <li><strong>Cloud Infrastructure:</strong> AWS EC2 instance for hosting the Spring Boot application, providing a scalable and secure environment for the deployed application.</li>
+                    <li><strong>Database:</strong> MySQL for storing and managing application data, ensuring efficient relational data handling and integration with the Spring application.</li>
+                    <li><strong>Deployment:</strong> Automated deployment of the Spring Boot application to the EC2 instance, reducing manual intervention and ensuring consistency between environments.</li>
+                </ul>
+            </div>
         </div>
 
         <div id="aws" class="container">
             <h1>AWS (Amazon Web Services)</h1>
             <p>AWS is a comprehensive cloud computing platform offering a wide range of services including computing power, storage options, networking, and databases. It provides scalable and flexible solutions for businesses of all sizes.</p>
-            <div id="aws_vpc" class="project">
-            <h2>Key Services:</h2>
-            <ul>
-                <li>
-                    <strong>VPC (Virtual Private Cloud):</strong> Isolated cloud resources: 
-                    <a href="images/3tier_aws_app.jpg" alt="VPC" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">aws_vpc</a>
-                </li>
-                <img src="images/3tier_aws_app.jpg" alt="IaC Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
-                
-            </ul>
-            <h2>Benefits:</h2>
-            <ul>
-                <li>Scalability and flexibility</li>
-                <li>Pay-as-you-go pricing</li>
-                <li>Global infrastructure</li>
-                <li>Security and compliance</li>
-                <li>Wide range of services and tools</li>
-            </ul>
-            <p>For more information, visit the <a href="https://aws.amazon.com/" target="_blank">official AWS website</a>.</p>
+            <div id="aws_ec2_s3" class="project">
+                <h2>Seamless Integration of Amazon EC2 and S3 for Scalable Cloud Solutions</h2>
+                <p class="pro"><strong>This project demonstrates the integration of **Amazon EC2** instances with **Amazon S3** storage, allowing for seamless management of cloud resources.
+                    <a href="images/aws_ec2_s3_task.jpg" alt="VPC" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">AWS EC2 and S3 Integration Architecture</a></strong>
+                </p>
+                <img src="images/aws_ec2_s3_task.jpg" alt="IaC Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
+                <ul>
+                    <li><strong>Amazon EC2:</strong> The **Amazon EC2** instances serve as the compute resources, running applications, web servers, and services that require dynamic scaling and high availability. EC2 instances are provisioned within the VPC to ensure proper security and access controls.</li>
+                    <li><strong>Amazon S3:</strong> **Amazon S3** is used for scalable object storage. It provides durable and highly available storage for storing large datasets, backups, media files, and other unstructured data. S3 is integrated with EC2 instances for efficient data retrieval and storage.</li>
+                    <li><strong>Security Groups:</strong> Security Groups are configured for both EC2 instances and S3 buckets, defining the allowed inbound and outbound traffic. This ensures that only trusted sources can access the resources, and tight security policies are enforced.</li>
+                    <li><strong>IAM Roles and Policies:</strong> **AWS Identity and Access Management (IAM)** roles and policies are defined to manage access between EC2 instances, S3, and other AWS resources. These policies ensure the principle of least privilege and secure access control.</li>
+                    <li><strong>Data Backup and Storage:</strong> **S3** serves as a centralized backup repository for critical application data, with automated scripts running on EC2 instances to regularly back up data to S3, ensuring data durability and recovery in case of failure.</li>
+                </ul>
             </div>
+            <div id="aws_vpc" class="project">
+                <h2>Building Secure and Scalable Networks with Amazon Virtual Private Cloud (VPC)</h2>
+                <p class="pro"><strong>This project demonstrates how to design and deploy secure, scalable network architectures using **Amazon Virtual Private Cloud (VPC)**. The VPC allows you to isolate cloud resources in a private network, offering enhanced security, custom networking, and greater control over your AWS environment.  
+                    <a href="images/3tier_aws_app.jpg" alt="VPC" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">AWS VPC Architecture</a></strong>
+                </p>
+                <img src="images/3tier_aws_app.jpg" alt="IaC Architecture" class="project-image" style="width: 100%; height: 600px; object-fit: contain;">
+                <ul>
+                    <li><strong>VPC (Virtual Private Cloud):</strong> Amazon **VPC** is used to isolate cloud resources, providing a secure network environment for EC2 instances, databases, and other resources. It helps you define your own network topology, subnets, and route tables to ensure smooth communication between resources while maintaining high security.</li>
+                    <li><strong>Subnets and CIDR Blocks:</strong> **VPC** allows you to create both **public** and **private subnets**, offering full control over IP address ranges using **CIDR blocks** (Classless Inter-Domain Routing). Public subnets are used for resources that need internet access, while private subnets are designed for internal services like databases.</li>
+                    <li><strong>Internet Gateway and NAT Gateway:</strong> The VPC setup includes an **Internet Gateway** for outbound access from public subnets and a **NAT Gateway** for outbound internet access from private subnets. This provides controlled access while ensuring security for internal resources.</li>
+                    <li><strong>Security Groups</strong> **Security Groups** is configured to enforce tight access control policies, ensuring that only authorized traffic can reach the resources within the VPC. Security groups are stateful</li>
+                </ul>
+            </div>
+            
         </div>
     </main>
     <footer class="fixed-footer">
