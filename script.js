@@ -34,6 +34,34 @@ document.addEventListener("DOMContentLoaded", function () {
             ]
         },
         {
+            name: "Sanjana",
+            degree: "BE",
+            passingYear: "2024",
+            stream: "Electronics and Communication Engineering",
+            projectName: "IKEA Clone",
+            githubLink: "https://github.com/sanjana2580/IKEA_Clone_project.git",
+            images: [
+                "https://raw.githubusercontent.com/sanjana2580/IKEA_Clone_project/refs/heads/main/Screenshot%202025-01-31%20130545.png",
+                "https://raw.githubusercontent.com/sanjana2580/IKEA_Clone_project/refs/heads/main/Screenshot%202025-01-31%20130630.png",
+                "https://raw.githubusercontent.com/sanjana2580/IKEA_Clone_project/refs/heads/main/Screenshot%202025-01-31%20130708.png",
+                "https://raw.githubusercontent.com/sanjana2580/IKEA_Clone_project/refs/heads/main/Screenshot%202025-01-31%20130806.png"
+            ]
+        },
+        {
+            name: "Harshitha H M",
+            degree: "BE",
+            passingYear: "2023",
+            stream: "Information Science and Engineering",
+            projectName: "Gear Shift Zone",
+            githubLink: "https://github.com/harshitha-mallikarjunaiah/GearShiftZone.git",
+            images: [
+                "https://raw.githubusercontent.com/harshitha-mallikarjunaiah/GearShiftZone/refs/heads/main/webpage.jpeg",
+                "https://raw.githubusercontent.com/harshitha-mallikarjunaiah/GearShiftZone/refs/heads/main/jenkins_img.jpeg",
+                "https://raw.githubusercontent.com/harshitha-mallikarjunaiah/GearShiftZone/refs/heads/main/tomcat_img.jpeg",
+                "https://raw.githubusercontent.com/harshitha-mallikarjunaiah/GearShiftZone/refs/heads/main/git-img.jpg"
+            ]
+        },
+        {
             name: "Sneha N Prasad",
             degree: "BCA",
             passingYear: "2023",

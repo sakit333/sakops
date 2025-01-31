@@ -63,7 +63,8 @@ body {
 
 .main-content {
     flex: 1;
-    margin-left: 250px;
+    margin: auto;
+    /* margin-left: 250px; */
     padding: 40px;
     max-width: 1200px;
     width: 100%;
