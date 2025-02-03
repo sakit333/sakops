@@ -152,12 +152,12 @@
                     </ul>
                     <div>
                         <h2 class="fs-4" >Tomcat Users Configuration</h2>
-                        <pre>
+                        <pre class="bg-dark text-light p-3 rounded">
 &lt;role rolename="manager-gui"/&gt;
 &lt;role rolename="manager-script"/&gt;
 &lt;role rolename="manager-jmx"/&gt;
 &lt;role rolename="manager-status"/&gt;
-&lt;user username="admin" password="admin" roles="manager-gui,manager-script,manager-jmx,manager-status"/&gt;
+&lt;user username="admin" password="admin" roles="manager-gui, manager-script, manager-jmx, manager-status"/&gt;
                         </pre>
                     </div>
                 </div>
@@ -183,7 +183,6 @@
                         <a href="images/project_1.jpg" alt="VPC" class="service-image" style="width: 100%; height: 600px; object-fit: contain;">Project-3</a></strong>
                     </p>
                     <img src="images/project_1.jpg" alt="IaC Architecture" class="project-image" style="width: 100%; object-fit: contain;">
-                
                         <ul>
                             <li>Version control: GitHub for source code management and version control</li>
                             <li>Build: Maven for compiling, testing, and packaging Java applications</li>
@@ -192,6 +191,13 @@
                             <li>Containerization: Docker for creating, managing, and orchestrating application containers</li>
                             <li>Deployment: deployment done into Tomcat Docker container</li>
                         </ul>
+                        <div>
+                            <h2 class="fs-4" >Dockerfile Script</h2>
+                            <pre class="bg-dark text-light p-3 rounded">
+FROM tomcat:9-jre9 
+COPY ./students.war /usr/local/tomcat/webapps
+                            </pre>
+                        </div>
                 </div>
                 <div id="project_4" class="project">
                     <h2>Project 4: Web Application Deployment to Apache Tomcat with Docker, DockerHub, and Ansible</h2>
@@ -333,7 +339,7 @@
 
     </main>
     <footer class="fixed-footer">
-        <p>&copy; 2024 sak_shetty. All rights reserved.</p>
+        <p>&copy; 2025 sak_shetty. All rights reserved.</p>
     </footer>
 </body>
 </html>

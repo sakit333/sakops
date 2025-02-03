@@ -67,6 +67,7 @@
                                     <li><a class="dropdown-item" href="#git">Git</a></li>
                                     <li><a class="dropdown-item" href="#aws_vpc">Maven</a></li>
                                     <li><a class="dropdown-item" href="#aws_vpc">Jenkins</a></li>
+                                    <li><a class="dropdown-item" href="#docker">Docker</a></li>
 
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
@@ -78,7 +79,7 @@
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                                     aria-expanded="false" style="font-size: 1.1rem;">DevSecOps Tools</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#project_1">Project-1</a></li>
+                                    <li><a class="dropdown-item" href="#nexus-repositories">Nexus</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="#">Separated link</a></li>
                                 </ul>
@@ -112,36 +113,158 @@
                 </nav>
             </div>
         </div>
-        <div id="projects">
-        <div class="container mt-6">
-            <h1 style="text-align: center;"><strong>Databases</strong></h1>
-            <p style="text-align: center; font-size: 30px; color: blueviolet;">Databases installations</p>   
-            <div id="mysql-amazon" class="project">
-            <h2>Mysql Database on amazon linux 2 instance</h2>
-            <pre>
-<code>sudo yum update -y</code>
-<code>sudo yum install -y mariadb-server</code>
-<code>sudo systemctl start mariadb</code>
-<code>sudo systemctl enable mariadb</code>
-<code>sudo mysql_secure_installation </code>
-<code>sudo systemctl status mariadb</code>
-            </pre>
+        <div id="projects" class="container py-5">
+            <h1 class="text-center fw-bold text-primary">🚀 Database Installations</h1>
+            <p class="text-center fs-4 text-secondary">Setup MySQL on Amazon Linux 2 & Ubuntu Instances</p>
+
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h3 id="mysql-amazon" class="card-title text-center text-dark mb-5">📌 MySQL Database on Amazon Linux 2 Instance</h3>
+                    <div class="position-relative">
+                        <button class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2" onclick="copyToClipboard('mysql-amazon-commands')">
+                            <i class="fas fa-copy"></i> Copy Code
+                        </button>
+                        <pre class="bg-dark text-light p-3 rounded">
+sudo yum update -y
+sudo yum install -y mariadb-server
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+sudo mysql_secure_installation
+sudo systemctl status mariadb
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h3 id="mysql-ubuntu" class="card-title text-center text-dark mb-5">📌 MySQL Database on Ubuntu Instance</h3>
+                    <div class="position-relative">
+                        <button class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2" onclick="copyToClipboard('mysql-ubuntu-commands')">
+                            <i class="fas fa-copy"></i> Copy Code
+                        </button>
+                        <pre class="bg-dark text-light p-3 rounded">
+sudo apt update
+sudo apt install -y mysql-server
+sudo systemctl start mysql
+sudo systemctl enable mysql
+sudo mysql_secure_installation
+sudo systemctl status mysql
+                        </pre>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container mt-6">
-            <div id="mysql-ubuntu" class="project">
-            <h2>MySQL Database on Ubuntu Instance</h2>
-            <pre>
-<code>sudo apt update</code>
-<code>sudo apt install -y mysql-server</code>
-<code>sudo systemctl start mysql</code>
-<code>sudo systemctl enable mysql</code>
-<code>sudo mysql_secure_installation</code>
-<code>sudo systemctl status mysql</code>
-            </pre>
-            </div>            
+
+        <div id="projects" class="container py-5">
+            <h1 id="docker" class="text-center fw-bold text-primary">🚀 Docker Installation</h1>
+            <p class="text-center fs-4 text-secondary">Setup Docker on Amazon Linux 2</p>
+        
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h3 class="card-title text-center text-dark">📌 Docker Installation Steps</h3>
+                    <div class="position-relative">
+                        <button class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2" onclick="copyToClipboard('docker-commands')">
+                            <i class="fas fa-copy"></i> Copy Code
+                        </button>
+                        <pre  class="bg-dark text-light p-3 rounded">
+sudo yum update -y
+sudo yum install -y docker
+sudo systemctl enable docker
+sudo systemctl start docker
+sudo systemctl status docker
+docker --version
+sudo yum install -y git
+# Install Docker Compose
+sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+                        </pre>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <!-- Nexus Repository Setup Section -->
+        <div class="container py-5">
+            <h1 id="nexus-repositories" class="text-center fw-bold text-primary">🚀 Nexus Repository Setup</h1>
+            <p class="text-center fs-4 text-secondary">Add Nexus Repositories and Distribution Management</p>
+
+            <!-- Nexus Repositories Configuration -->
+            <div class="card shadow-lg border-0 mb-5">
+                <div class="card-body">
+                    <h3 class="card-title text-center text-dark">📌 Nexus Repositories in pom.xml</h3>
+                    <div class="position-relative">
+                        <button class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2" onclick="copyToClipboard('nexus-repositories')">
+                            <i class="fas fa-copy"></i> Copy Code
+                        </button>
+                        <pre class="bg-dark text-light p-3 rounded">
+&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;nexus-releases&lt;/id&gt;
+        &lt;name&gt;maven-releases&lt;/name&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-releases/&lt;/url&gt;
+    &lt;/repository&gt;
+    &lt;repository&gt;
+        &lt;id&gt;nexus-snapshots&lt;/id&gt;
+        &lt;name&gt;maven-snapshots&lt;/name&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-snapshots/&lt;/url&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt;
+                          
+&lt;distributionManagement&gt;
+    &lt;repository&gt;
+        &lt;id&gt;nexus-releases&lt;/id&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-releases/&lt;/url&gt;
+    &lt;/repository&gt;
+    &lt;snapshotRepository&gt;
+        &lt;id&gt;nexus-snapshots&lt;/id&gt;
+        &lt;url&gt;http://localhost:8081/repository/maven-snapshots/&lt;/url&gt;
+    &lt;/snapshotRepository&gt;
+&lt;/distributionManagement&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nexus Settings.xml Configuration -->
+            <div class="card shadow-lg border-0">
+                <div class="card-body">
+                    <h3 class="card-title text-center text-dark">📌 Nexus Settings.xml</h3>
+                    <div class="position-relative">
+                        <button class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2" onclick="copyToClipboard('nexus-settings')">
+                            <i class="fas fa-copy"></i> Copy Code
+                        </button>
+                        <pre id="nexus-settings" class="bg-dark text-light p-3 rounded">
+&lt;settings&gt;
+    &lt;servers&gt;
+        &lt;server&gt;
+            &lt;id&gt;nexus-releases&lt;/id&gt;
+            &lt;username&gt;admin&lt;/username&gt;
+            &lt;password&gt;admin&lt;/password&gt;
+        &lt;/server&gt;
+        &lt;server&gt;
+            &lt;id&gt;nexus-snapshots&lt;/id&gt;
+            &lt;username&gt;admin&lt;/username&gt;
+            &lt;password&gt;admin&lt;/password&gt;
+        &lt;/server&gt;
+    &lt;/servers&gt;
+&lt;/settings&gt;
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <script>
+        function copyToClipboard(elementId) {
+            var text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert("✅ Commands copied to clipboard!");
+            }).catch(err => console.error('Error copying text: ', err));
+        }
+    </script>
+    <footer class="fixed-footer">
+        <p>&copy; 2025 sak_shetty. All rights reserved.</p>
+    </footer>
 </body>
 </html>
