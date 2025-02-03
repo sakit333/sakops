@@ -64,9 +64,9 @@
                                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                                     aria-expanded="false" style="font-size: 1.1rem;">DevOps Tools</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#git">Git</a></li>
-                                    <li><a class="dropdown-item" href="#aws_vpc">Maven</a></li>
-                                    <li><a class="dropdown-item" href="#aws_vpc">Jenkins</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#git">Git</a></li> -->
+                                    <!-- <li><a class="dropdown-item" href="#aws_vpc">Maven</a></li> -->
+                                    <!-- <li><a class="dropdown-item" href="#aws_vpc">Jenkins</a></li> -->
                                     <li><a class="dropdown-item" href="#docker">Docker</a></li>
 
                                     <li><hr class="dropdown-divider"></li>
@@ -133,6 +133,26 @@ sudo mysql_secure_installation
 sudo systemctl status mariadb
                         </pre>
                     </div>
+                    <h3 id="mysql-ubuntu" class="card-title text-center text-dark mb-5">📌 MySQL Database Configuration</h3>
+                    <div class="position-relative">
+                    <button class="btn btn-sm btn-primary position-absolute top-0 end-0 m-2" onclick="copyToClipboard('mysql-ubuntu-commands')">
+                        <i class="fas fa-copy"></i> Copy Code
+                    </button>
+                    <pre id="mysql-ubuntu-commands" class="bg-dark text-light p-3 rounded">
+# To configure MySQL
+vi /etc/my.cnf
+bind-address=0.0.0.0
+
+# Restart MariaDB service
+sudo systemctl restart mariadb
+
+# To give grant access
+mysql -u root -p
+
+# Grant privileges to root
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1234' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+                    </pre>
                 </div>
             </div>
 
